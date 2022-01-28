@@ -4,7 +4,8 @@ return require('packer').startup(function()
 
   use 'shaeinst/roshnivim-cs'
   use 'wbthomason/packer.nvim'
-  use {'dracula/vim', as = 'dracula'}
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {

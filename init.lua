@@ -1,5 +1,6 @@
 require("plugins.plugins")  -- plusgins configs
 require("config.settings")  -- settings configs
+require('lsp.setup')        -- lsp configs
 require("config.keymaps")   -- keymaps configs
 require("config.bootstrap") -- plugins configs
 require("config.globals")   -- global configs
