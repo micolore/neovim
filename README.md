@@ -7,6 +7,24 @@
 
 ## 配置目录
 
+* lua
+** lsp
+
+*** setup.lua
+*** lsp.lua
+*** nvim-cmp.lua
+
+** config
+*** settings.lua
+*** keymaps.lua
+
+* plugins
+
 ## 常用插件
+
+* lsp、cmp
+* packer
+* theme
+
 
 ## 其他

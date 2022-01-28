@@ -2,6 +2,8 @@
 local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
+local g = vim.g         	  -- global variables
+g.mapleader = ' '             -- change leader to a comma
 
 -- map Esc to kk
 map('i', 'kk', '<Esc>', {noremap = true})
@@ -13,6 +15,33 @@ map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
 -- open terminal
 map('n', 'ts', ':te<CR>', { noremap = true })
 
+-- Save
+map('n','S','<esc>:w<CR>',{ noremap = true})
+
+-- Quit
+map('n','Q',':q<CR>',{ noremap = true})
+
+
+-- Window Move
+map('n','<leader> h','<C-W>h',{ noremap = true})
+map('n','<leader> l','<C-W>l',{ noremap = true})
+map('n','<leader> k','<C-W>k',{ noremap = true})
+map('n','<leader> j','<C-W>j',{ noremap = true})
+
+-- Buffer Move
+map('n','<silent> bu',':enew',{ noremap = true})
+map('n','<silent> bn',':bnext',{ noremap = true})
+map('n','<silent> bb',':bprevious',{ noremap = true})
+map('n','<silent> bd',':bdelete',{ noremap = true})
+
+-- Move word、line
+map('n','<silent> W','5W',{ noremap = true})
+map('n','<silent> B','5b',{ noremap = true})
+map('i','<C-e>','<END>',{ noremap = true})
+map('i','<C-a>','<HOME>',{ noremap = true})
+
+-- file exploree
+map('n','R',':NvimTreeToggle<CR>',{noremap = true})
 
 local pluginKeys = {}
 
@@ -71,3 +100,6 @@ end
 
 
 return pluginKeys
+
+
+

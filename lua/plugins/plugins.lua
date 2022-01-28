@@ -13,7 +13,7 @@ return require('packer').startup(function()
     },
     config = function() require'nvim-tree'.setup {} end
     }
-    -- nvim-cmp
+  -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
   use 'hrsh7th/cmp-path'     -- { name = 'path' }
@@ -25,4 +25,11 @@ return require('packer').startup(function()
   use 'rafamadriz/friendly-snippets'
   -- lspkind
   use 'onsails/lspkind-nvim'
+
+  --line
+  use 'nvim-lualine/lualine.nvim'
+
+  -- file explorer
+  use 'kyazdani42/nvim-tree.lua'
+
 end)
