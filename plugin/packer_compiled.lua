@@ -89,6 +89,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["roshnivim-cs"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/roshnivim-cs",
+    url = "https://github.com/shaeinst/roshnivim-cs"
   }
 }
 

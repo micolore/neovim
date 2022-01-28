@@ -1,6 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+
+  use 'shaeinst/roshnivim-cs'
   use 'wbthomason/packer.nvim'
   use {'dracula/vim', as = 'dracula'}
   use {
@@ -10,4 +12,4 @@ return require('packer').startup(function()
     },
     config = function() require'nvim-tree'.setup {} end
     }
-end) 
+end)
