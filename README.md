@@ -8,14 +8,19 @@
 ## 配置目录
 
 * lua
+
 ** lsp
 
 *** setup.lua
+
 *** lsp.lua
+
 *** nvim-cmp.lua
 
 ** config
+
 *** settings.lua
+
 *** keymaps.lua
 
 * plugins
