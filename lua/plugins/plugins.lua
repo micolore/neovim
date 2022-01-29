@@ -2,10 +2,10 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+  -- clolortheme
   use 'shaeinst/roshnivim-cs'
   use 'wbthomason/packer.nvim'
-  use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
+
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -13,16 +13,23 @@ return require('packer').startup(function()
     },
     config = function() require'nvim-tree'.setup {} end
     }
-  -- nvim-cmp
+
+    -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
   use 'hrsh7th/cmp-path'     -- { name = 'path' }
   use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
   use 'hrsh7th/nvim-cmp'
+
   -- vsnip
   use 'hrsh7th/cmp-vsnip'    -- { name = 'vsnip' }
   use 'hrsh7th/vim-vsnip'
   use 'rafamadriz/friendly-snippets'
+
+  -- lsp
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
+
   -- lspkind
   use 'onsails/lspkind-nvim'
 
@@ -31,8 +38,9 @@ return require('packer').startup(function()
 
   -- file explorer
   use 'kyazdani42/nvim-tree.lua'
+
   -- search
-  use 'ibhagwan/fzf-lua'
+  -- use 'ibhagwan/fzf-lua'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-lua/plenary.nvim'
@@ -40,4 +48,9 @@ return require('packer').startup(function()
   -- buffer
   use 'akinsho/bufferline.nvim'
 
+  -- git
+  use 'lewis6991/gitsigns.nvim'
+
+  -- terminal
+  use 'akinsho/toggleterm.nvim'
 end)
