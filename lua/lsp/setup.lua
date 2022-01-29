@@ -5,12 +5,14 @@ local servers = {
 local lsp_installer = require "nvim-lsp-installer"
 
 
-local lspservers = {
-    "gopls",
-}
+--local lspservers = {
+--    "gopls",
+--}
+
+require'lspconfig'.gopls.setup{}
 
 -- Loop through the servers listed above.
-for _, server_name in pairs(lspservers) do
+for _, server_name in pairs(servers) do
     local server_available, server = lsp_installer.get_server(server_name)
     if server_available then
         server:on_ready(function ()
