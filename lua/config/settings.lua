@@ -33,6 +33,8 @@ opt.smartindent = true    -- autoindent new lines
 -- statusline
 require('lualine').setup()
 
+-- buffer
+require('bufferline').setup()
 
 -- File Explorer
 require'nvim-tree'.setup {

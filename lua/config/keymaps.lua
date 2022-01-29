@@ -29,10 +29,10 @@ map('n','<leader>k','<C-W>k',{ noremap = true})
 map('n','<leader>j','<C-W>j',{ noremap = true})
 
 -- Buffer Move
-map('n','<silent> bu',':enew',{ noremap = true})
-map('n','<silent> bn',':bnext',{ noremap = true})
-map('n','<silent> bb',':bprevious',{ noremap = true})
-map('n','<silent> bd',':bdelete',{ noremap = true})
+map('n','bu',':enew<CR>',{ noremap = true})
+map('n','bn',':bnext<CR>',{ noremap = true})
+map('n','bb',':bprevious<CR>',{ noremap = true})
+map('n','bd',':bdelete<CR>',{ noremap = true})
 
 -- Move word、line
 map('n','<silent> W','5W',{ noremap = true})
