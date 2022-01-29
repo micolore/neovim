@@ -12,9 +12,8 @@ map('i', 'kk', '<Esc>', {noremap = true})
 map('n', '<leader>s', ':w<CR>', default_opts)
 map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
 
--- open terminal
-map('n', 'ts', ':te<CR>', { noremap = true })
-
+-- terminal
+map('n', '<leader>t',':ToggleTerm size=60 direction=horizontal <CR>',default_opts)
 -- Save
 map('n','S','<esc>:w<CR>',{ noremap = true})
 
@@ -43,6 +42,12 @@ map('i','<C-a>','<HOME>',{ noremap = true})
 -- file exploree
 map('n','<leader>r',':NvimTreeToggle<CR>',{noremap = true})
 
+
+-- window
+vim.api.nvim_set_keymap('n', '<leader>wh', ':FocusSplitLeft<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>wd', ':FocusSplitDown<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>wu', ':FocusSplitUp<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>wl', ':FocusSplitRight<CR>', { silent = true })
 
 -- search
 

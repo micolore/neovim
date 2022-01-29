@@ -2,9 +2,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+  use 'wbthomason/packer.nvim'
+
   -- clolortheme
   use 'shaeinst/roshnivim-cs'
-  use 'wbthomason/packer.nvim'
+  -- dashboard
+
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -13,6 +16,7 @@ return require('packer').startup(function()
     },
     config = function() require'nvim-tree'.setup {} end
     }
+  use 'romgrk/barbar.nvim'
 
     -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
@@ -29,6 +33,8 @@ return require('packer').startup(function()
   -- lsp
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
+
+  use 'ray-x/go.nvim'
 
   -- lspkind
   use 'onsails/lspkind-nvim'
@@ -53,4 +59,8 @@ return require('packer').startup(function()
 
   -- terminal
   use 'akinsho/toggleterm.nvim'
+
+  --window
+  use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+
 end)

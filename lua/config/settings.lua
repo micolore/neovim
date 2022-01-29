@@ -34,7 +34,15 @@ opt.smartindent = true    -- autoindent new lines
 require('lualine').setup()
 
 -- buffer
-require('bufferline').setup()
+
+-- dashboard
+
+-- file Explorer
+
+
+-- go
+require('go').setup()
+
 
 -- git
 require('gitsigns').setup {
