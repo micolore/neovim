@@ -6,6 +6,9 @@ return require('packer').startup(function()
 
   -- clolortheme
   use 'shaeinst/roshnivim-cs'
+  -- use 'folke/tokyonight.nvim'
+  use 'norcalli/nvim-colorizer.lua'
+
   -- dashboard
 
 
