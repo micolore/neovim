@@ -32,4 +32,9 @@ return require('packer').startup(function()
   -- file explorer
   use 'kyazdani42/nvim-tree.lua'
 
+  use 'ibhagwan/fzf-lua'
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-lua/plenary.nvim'
+
 end)

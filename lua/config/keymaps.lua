@@ -3,7 +3,7 @@ local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
 local g = vim.g         	  -- global variables
-g.mapleader = ' '             -- change leader to a comma
+g.mapleader = '.'             -- change leader to a comma
 
 -- map Esc to kk
 map('i', 'kk', '<Esc>', {noremap = true})
@@ -23,10 +23,10 @@ map('n','Q',':q<CR>',{ noremap = true})
 
 
 -- Window Move
-map('n','<leader> h','<C-W>h',{ noremap = true})
-map('n','<leader> l','<C-W>l',{ noremap = true})
-map('n','<leader> k','<C-W>k',{ noremap = true})
-map('n','<leader> j','<C-W>j',{ noremap = true})
+map('n','<leader>h','<C-W>h',{ noremap = true})
+map('n','<leader>l','<C-W>l',{ noremap = true})
+map('n','<leader>k','<C-W>k',{ noremap = true})
+map('n','<leader>j','<C-W>j',{ noremap = true})
 
 -- Buffer Move
 map('n','<silent> bu',':enew',{ noremap = true})
@@ -41,7 +41,20 @@ map('i','<C-e>','<END>',{ noremap = true})
 map('i','<C-a>','<HOME>',{ noremap = true})
 
 -- file exploree
-map('n','R',':NvimTreeToggle<CR>',{noremap = true})
+map('n','<leader>r',':NvimTreeToggle<CR>',{noremap = true})
+
+
+-- search
+
+-- fzf
+-- vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('fzf-lua').files()<CR>",{ noremap = true, silent = true })
+
+-- Telescope
+vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fg',"<cmd>lua require('telescope.builtin').live_grep()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fh',"<cmd>lua require('telescope.builtin').help_tags()<CR>",{ noremap = true, silent = true })
+
 
 local pluginKeys = {}
 
