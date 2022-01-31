@@ -4,7 +4,7 @@ local map = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
 local g = vim.g         	  -- global variables
-g.mapleader = '.'             -- change leader to a comma
+g.mapleader = ','             -- change leader to a comma
 
 map("n", "<Leader>u", ":PackerSync<CR>",default_opts)
 

@@ -6,3 +6,4 @@ require('setup.cmp')    	 -- lsp cmp configs
 require('setup.line')   	 -- lsp line configs
 require('setup.autopairs')   -- lsp autopairs configs
 require('setup.hop')   	     -- lsp hop configs
+require('setup.golang')   	 -- lsp golang configs

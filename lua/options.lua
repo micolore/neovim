@@ -33,8 +33,7 @@ cmd [[au BufWritePre * :%s/\s\+$//e]]
 ----------------
 ----colortheme
 ----------------
-cmd [[colorscheme rvcs]]
--- cmd [[colorscheme tokyonight]]
-require'colorizer'.setup()
+-- cmd [[colorscheme rvcs]]
+cmd [[colorscheme tokyonight]]
 
 

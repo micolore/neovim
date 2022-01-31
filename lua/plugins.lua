@@ -9,8 +9,8 @@ return require('packer').startup(function()
   -- clolortheme
   use 'shaeinst/roshnivim-cs'
 
-  -- use 'folke/tokyonight.nvim'
-  use 'norcalli/nvim-colorizer.lua'
+  use 'folke/tokyonight.nvim'
+  -- use 'norcalli/nvim-colorizer.lua'
 
   -- dashboard
 
@@ -74,4 +74,8 @@ return require('packer').startup(function()
   use 'windwp/nvim-autopairs'
 
   use 'phaazon/hop.nvim'
+
+  -- use 'simrat39/symbols-outline.nvim'
+
+  use 'preservim/tagbar'
 end)
