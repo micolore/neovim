@@ -5,6 +5,19 @@ local default_opts = { noremap = true, silent = true }
 local g = vim.g         	  -- global variables
 g.mapleader = '.'             -- change leader to a comma
 
+
+-- update plugins
+map("n", "<Leader>u", ":PackerSync<CR>")
+
+-- quick new  file
+map("n", "<Leader>n", "<cmd>enew<CR>")
+-- select all of file
+map("n", "<Leader>sa", "ggVG<c-$>")
+-- visual model copy line
+map("v", "y", "ygv<Esc>")
+-- mormal model copy to end  of line
+map("n", "Y", "y$")
+
 -- map Esc to kk
 map('i', 'kk', '<Esc>', {noremap = true})
 
