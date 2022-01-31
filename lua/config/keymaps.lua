@@ -5,18 +5,16 @@ local default_opts = { noremap = true, silent = true }
 local g = vim.g         	  -- global variables
 g.mapleader = '.'             -- change leader to a comma
 
-
--- update plugins
-map("n", "<Leader>u", ":PackerSync<CR>")
+map("n", "<Leader>u", ":PackerSync<CR>",default_opts)
 
 -- quick new  file
-map("n", "<Leader>n", "<cmd>enew<CR>")
+map("n", "<Leader>n", "<cmd>enew<CR>",default_opts)
 -- select all of file
-map("n", "<Leader>sa", "ggVG<c-$>")
+map("n", "<Leader>sa", "ggVG<c-$>",default_opts)
 -- visual model copy line
-map("v", "y", "ygv<Esc>")
+map("v", "y", "ygv<Esc>",default_opts)
 -- mormal model copy to end  of line
-map("n", "Y", "y$")
+map("n", "Y", "y$",default_opts)
 
 -- map Esc to kk
 map('i', 'kk', '<Esc>', {noremap = true})
@@ -66,7 +64,7 @@ vim.api.nvim_set_keymap('n', '<leader>wl', ':FocusSplitRight<CR>', { silent = tr
 -- vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('fzf-lua').files()<CR>",{ noremap = true, silent = true })
 
 -- Telescope
-vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files() find_command=rg,--ignore,--hidden,--files prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files() prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fg',"<cmd>lua require('telescope.builtin').live_grep()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fl',"<cmd>lua require('telescope.builtin').oldfiles()<CR>",{ noremap = true, silent = true })
