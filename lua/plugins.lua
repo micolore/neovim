@@ -1,3 +1,5 @@
+-- plugins.lua
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
@@ -6,6 +8,7 @@ return require('packer').startup(function()
 
   -- clolortheme
   use 'shaeinst/roshnivim-cs'
+
   -- use 'folke/tokyonight.nvim'
   use 'norcalli/nvim-colorizer.lua'
 
