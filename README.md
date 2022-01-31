@@ -15,21 +15,24 @@
 
 *** lsp.lua
 
-*** nvim-cmp.lua
+*** cmp.lua
 
 ** config
 
 *** settings.lua
 
-*** keymaps.lua
+*** mappings.lua
 
 * plugins
 
 ## 常用插件
 
 * lsp、cmp
+
 * packer
+
 * theme
 
+* file manage
 
 ## 其他

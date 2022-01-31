@@ -66,4 +66,6 @@ return require('packer').startup(function()
   --window
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 
+  use 'windwp/nvim-autopairs'
+
 end)

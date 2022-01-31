@@ -1,4 +1,3 @@
-
 local opt = vim.opt         	-- global/buffer/windows-scoped options
 local cmd = vim.cmd     	-- execute Vim commands
 local exec = vim.api.nvim_exec 	-- execute Vimscript
@@ -40,6 +39,9 @@ require('lualine').setup()
 -- dashboard
 
 -- file Explorer
+
+-- auto pairs
+require('nvim-autopairs').setup{}
 
 
 -- go

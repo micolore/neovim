@@ -34,8 +34,6 @@ map('n','bb',':bprevious<CR>',{ noremap = true})
 map('n','bd',':bdelete<CR>',{ noremap = true})
 
 -- Move word、line
-map('n','<silent> W','5W',{ noremap = true})
-map('n','<silent> B','5b',{ noremap = true})
 map('i','<C-e>','<END>',{ noremap = true})
 map('i','<C-a>','<HOME>',{ noremap = true})
 
@@ -55,10 +53,11 @@ vim.api.nvim_set_keymap('n', '<leader>wl', ':FocusSplitRight<CR>', { silent = tr
 -- vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('fzf-lua').files()<CR>",{ noremap = true, silent = true })
 
 -- Telescope
-vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'ff',"<cmd>lua require('telescope.builtin').find_files() find_command=rg,--ignore,--hidden,--files prompt_prefix=🔍<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fg',"<cmd>lua require('telescope.builtin').live_grep()<CR>",{ noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",{ noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'fh',"<cmd>lua require('telescope.builtin').help_tags()<CR>",{ noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'fl',"<cmd>lua require('telescope.builtin').oldfiles()<CR>",{ noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', 'fh',"<cmd>lua require('telescope.builtin').help_tags()<CR>",{ noremap = true, silent = true })
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
