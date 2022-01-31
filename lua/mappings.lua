@@ -11,7 +11,7 @@ map("n", "<Leader>u", ":PackerSync<CR>",default_opts)
 -- quick new  file
 map("n", "<Leader>n", "<cmd>enew<CR>",default_opts)
 -- select all of file
-map("n", "<Leader>sa", "ggVG<c-$>",default_opts)
+map("n", "<Leader>aa", "ggVG<c-$>",default_opts)
 -- visual model copy line
 map("v", "y", "ygv<Esc>",default_opts)
 -- mormal model copy to end  of line
