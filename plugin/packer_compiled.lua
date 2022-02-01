@@ -196,6 +196,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/roshnivim-cs",
     url = "https://github.com/shaeinst/roshnivim-cs"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   tagbar = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/tagbar",

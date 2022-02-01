@@ -41,6 +41,9 @@ return require('packer').startup(function()
 
   use 'ray-x/go.nvim'
 
+  -- rust
+  use 'simrat39/rust-tools.nvim'
+
   -- lspkind
   use 'onsails/lspkind-nvim'
 

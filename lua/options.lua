@@ -25,7 +25,7 @@ opt.shiftwidth = 4 -- Size of an indent
 opt.sidescrolloff = 8 -- Columns of context
 opt.tabstop = 4 -- Number of spaces tabs count for
 
-vim.g.markdown_fenced_languages = { "html", "javascript", "typescript", "css", "scss", "lua", "vim" , "go" }
+vim.g.markdown_fenced_languages = { "html", "javascript", "rust","typescript", "css", "scss", "lua", "vim" , "go" }
 
 -- remove whitespace on save
 cmd [[au BufWritePre * :%s/\s\+$//e]]
@@ -36,8 +36,3 @@ cmd [[au BufWritePre * :%s/\s\+$//e]]
 -- cmd [[colorscheme rvcs]]
 cmd [[colorscheme tokyonight]]
 
-
--- git
-vim.g.gitblame_enabled = 1
-vim.g.gitblame_message_template = '<summary> • <date> • <author>'
-vim.g.gitblame_date_format = '%Y%m%d %H:%M'
