@@ -78,4 +78,7 @@ return require('packer').startup(function()
   -- use 'simrat39/symbols-outline.nvim'
 
   use 'preservim/tagbar'
+
+  -- git
+  use 'f-person/git-blame.nvim'
 end)
