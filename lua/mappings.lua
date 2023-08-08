@@ -52,7 +52,6 @@ map('i','<C-a>','<HOME>',{ noremap = true})
 -- file exploree
 map('n','<leader>r',':NvimTreeToggle<CR>',{noremap = true})
 
-
 -- window
 vim.api.nvim_set_keymap('n', '<leader>wh', ':FocusSplitLeft<CR>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>wd', ':FocusSplitDown<CR>', { silent = true })
@@ -150,6 +149,4 @@ end
 
 
 return pluginKeys
-
-
 

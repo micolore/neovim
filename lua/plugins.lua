@@ -63,16 +63,16 @@ return require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
 
   -- buffer
-  use 'akinsho/bufferline.nvim'
-
-  -- git
-  use 'lewis6991/gitsigns.nvim'
-
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  
   -- terminal
-  use 'akinsho/toggleterm.nvim'
+  use {"akinsho/toggleterm.nvim", tag ='*', config = function()
+      require("toggleterm").setup()
+  end}
+
 
   --window
-  use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+  --use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 
   use 'windwp/nvim-autopairs'
 
@@ -83,5 +83,6 @@ return require('packer').startup(function()
   use 'preservim/tagbar'
 
   -- git
-  use 'f-person/git-blame.nvim'
+  -- use 'f-person/git-blame.nvim'
+  -- use 'lewis6991/gitsigns.nvim'
 end)
