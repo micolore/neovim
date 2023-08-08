@@ -64,7 +64,7 @@ return require('packer').startup(function()
 
   -- buffer
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-  
+
   -- terminal
   use {"akinsho/toggleterm.nvim", tag ='*', config = function()
       require("toggleterm").setup()
@@ -76,7 +76,14 @@ return require('packer').startup(function()
 
   use 'windwp/nvim-autopairs'
 
-  use 'phaazon/hop.nvim'
+  use {
+  'phaazon/hop.nvim',
+  branch = 'v2', -- optional but strongly recommended
+  config = function()
+    -- you can configure Hop the way you like here; see :h hop-config
+    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+  end
+  }
 
   -- use 'simrat39/symbols-outline.nvim'
 

@@ -8,6 +8,10 @@ g.mapleader = ','             -- change leader to a comma
 
 map("n", "<Leader>u", ":PackerSync<CR>",default_opts)
 
+--search
+map('n', 'jk', ':HopChar2<CR>', default_opts)
+--nmap <silent>  <cmd>HopLine<cr>
+
 -- quick new  file
 map("n", "<Leader>n", "<cmd>enew<CR>",default_opts)
 -- select all of file
@@ -26,6 +30,7 @@ map('i', '<leader>s', '<C-c>:w<CR>', default_opts)
 
 -- terminal
 map('n', '<leader>t',':ToggleTerm size=60 direction=horizontal <CR>',default_opts)
+
 -- Save
 map('n','S','<esc>:w<CR>',{ noremap = true})
 
